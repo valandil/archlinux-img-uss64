@@ -14,5 +14,6 @@ USER notroot
 WORKDIR /home/notroot
 
 ADD install-mips-xcompiler.sh /home/notroot/install-mips-xcompiler.sh
+ADD PKGBUILD.patch /home/notroot/PKGBUILD.patch
 RUN sudo chmod +x /home/notroot/install-mips-xcompiler.sh
 RUN /home/notroot/install-mips-xcompiler.sh

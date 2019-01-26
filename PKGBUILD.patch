@@ -1,0 +1,11 @@
+--- PKGBUILD	2019-01-26 08:25:18.569809100 -0500
++++ PKGBUILD-new	2019-01-26 11:01:41.904927100 -0500
+@@ -9,7 +9,7 @@
+ arch=('x86_64')
+ license=('GPL')
+ depends=('zlib')
+-source=("ftp://ftp.gnu.org/gnu/binutils/binutils-${pkgver}.tar.xz")
++source=("https://ftpmirror.gnu.org/binutils/binutils-${pkgver}.tar.xz")
+ sha256sums=('5d20086ecf5752cc7d9134246e9588fa201740d540f7eb84d795b1f7a93bca86')
+ 
+ prepare() {
