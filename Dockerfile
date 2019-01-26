@@ -13,6 +13,6 @@ RUN echo "notroot ALL=(ALL) NOPASSWD: ALL" > /etc/sudoers.d/notroot
 USER notroot
 WORKDIR /home/notroot
 
-ADD install-mips-xcompiler.sh install-mips-xcompiler.sh
-RUN sudo chmod +x install-mips-xcompiler.sh
-RUN install-mips-xcompiler.sh
+ADD install-mips-xcompiler.sh /home/notroot/install-mips-xcompiler.sh
+RUN chmod +x /home/notroot/install-mips-xcompiler.sh
+RUN /home/notroot/install-mips-xcompiler.sh
