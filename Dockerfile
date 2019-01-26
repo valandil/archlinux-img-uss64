@@ -14,5 +14,5 @@ USER notroot
 WORKDIR /home/notroot
 
 ADD install-mips-xcompiler.sh /home/notroot/install-mips-xcompiler.sh
-RUN chmod +x /home/notroot/install-mips-xcompiler.sh
+RUN sudo chmod +x /home/notroot/install-mips-xcompiler.sh
 RUN /home/notroot/install-mips-xcompiler.sh
