@@ -3,7 +3,7 @@ FROM archlinux/base
 MAINTAINER valandil "https://github.com/valandil"
 
 # Install dependencies.
-RUN pacman -Syy base-devel
+RUN pacman -Syy --noconfirm base-devel
 
 ADD install-mips-xcompiler.sh /install-mips-xcompiler.sh
 RUN chmod +x /install-mips-xcompiler.sh

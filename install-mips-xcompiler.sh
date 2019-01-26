@@ -9,23 +9,23 @@
 # -- Install mips64-elf-binutils
 git clone https://aur.archlinux.org/mips64-elf-binutils.git
 cd mips64-elf-binutils
-makepkg -sic
+makepkg --noconfirm -sic
 cd ../
 
 # -- Install mips64-elf-gcc-stage1
 git clone https://aur.archlinux.org/mips64-elf-gcc-stage1.git
 cd mips64-elf-gcc-stage1
-makepkg -sic
+makepkg --noconfirm  -sic
 cd ../
 
 # -- Install mips64-elf-newlib
 git clone https://aur.archlinux.org/mips64-elf-newlib.git
 cd mips64-elf-newlib
-makepkg -sic
+makepkg --noconfirm -sic
 cd ../
 
 # -- Finally install mips64-elf-gcc
 git clone https://aur.archlinux.org/mips64-elf-gcc.git
 cd mips64-elf-gcc
-makepkg -sic
+makepkg --noconfirm -sic
 cd ../
