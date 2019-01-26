@@ -6,6 +6,9 @@
 #                an Arch Linux Docker image.                                  #
 # --------------------------------------------------------------------------- #
 
+# -- Fails the script when a command fails.
+set -e 
+
 # -- Install mips64-elf-binutils
 git clone https://aur.archlinux.org/mips64-elf-binutils.git
 cd mips64-elf-binutils
