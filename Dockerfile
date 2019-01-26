@@ -4,7 +4,7 @@ MAINTAINER valandil "https://github.com/valandil"
 
 # Install dependencies.
 RUN pacman -Syy --noconfirm archlinux-keyring && \
-    pacman -S --noconfirm base-devel && \ 
+    pacman -S --noconfirm base-devel git && \ 
     pacman -Su --noconfirm
 
 # Prepare notroot user for makepkg.
