@@ -12,7 +12,7 @@ set -e
 # -- Install mips64-elf-binutils
 git clone https://aur.archlinux.org/mips64-elf-binutils.git
 cd mips64-elf-binutils
-patch -p1 -i ../PKGBUILD.patch
+patch -i ../PKGBUILD.patch
 makepkg --noconfirm -sic
 cd ../
 
