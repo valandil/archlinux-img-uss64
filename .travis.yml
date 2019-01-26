@@ -6,7 +6,7 @@ services:
   - docker
 
 script:
-  - travis wait 90 docker build -t joeydumont/archlinux-n64 .
+  - travis_wait 90 docker build -t joeydumont/archlinux-n64 .
 
 deploy:
   provider: script
