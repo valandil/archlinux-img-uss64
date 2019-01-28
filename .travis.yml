@@ -5,8 +5,17 @@ language: bash
 services:
   - docker
 
+before_script:
+   - "gem install travis-artifacts"
+
 script:
   - travis_wait 120 docker build -t joeydumont/archlinux-n64 .
+
+after_failure:
+  - "travis-artifacts upload --path /home/notroot/mips-elf-binutils/makepkg.log:binutils.makepkg.log"
+  - "travis-artifacts upload --path /home/notroot/mips-elf-gcc-stage1/makepkg.log:gcc-stage-1.makepkg.log"
+  - "travis-artifacts upload --path /home/notroot/mips-elf-newlib/makepkg.log:newlib.makepkg.log"
+  - "travis-artifacts upload --path /home/notroot/mips-elf-gcc/makepkg.log:gcc.makepkg.log"
 
 deploy:
   provider: script
