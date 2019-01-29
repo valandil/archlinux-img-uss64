@@ -12,10 +12,10 @@ script:
   - travis_wait 120 docker build -t joeydumont/archlinux-n64 .
 
 after_failure:
-  - "travis-artifacts upload --path /mips-elf-binutils/makepkg.log:binutils.makepkg.log"
-  - "travis-artifacts upload --path /mips-elf-gcc-stage1/makepkg.log:gcc-stage-1.makepkg.log"
-  - "travis-artifacts upload --path /mips-elf-newlib/makepkg.log:newlib.makepkg.log"
-  - "travis-artifacts upload --path /mips-elf-gcc/makepkg.log:gcc.makepkg.log"
+  - "travis-artifacts upload --path /mips64-elf-binutils/makepkg.log:binutils.makepkg.log"
+  - "travis-artifacts upload --path /mips64-elf-gcc-stage1/makepkg.log:gcc-stage-1.makepkg.log"
+  - "travis-artifacts upload --path /mips64-elf-newlib/makepkg.log:newlib.makepkg.log"
+  - "travis-artifacts upload --path /mips64-elf-gcc/makepkg.log:gcc.makepkg.log"
 
 deploy:
   provider: script
