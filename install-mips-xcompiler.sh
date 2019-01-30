@@ -42,7 +42,7 @@ makepkg --noconfirm -sic > makepkg.log 2>&1
 cd ../
 
 # -- Finally install mips64-elf-gcc
-sudo pacman -R --nodeps --nodeps --noconfirm mips64-elf-gcc
+sudo pacman -R --nodeps --nodeps --noconfirm mips64-elf-gcc-stage1
 git clone https://aur.archlinux.org/mips64-elf-gcc.git
 cd mips64-elf-gcc
 makepkg --noconfirm -sic
